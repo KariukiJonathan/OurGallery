@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Gallery &#10084;</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #444;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      margin-top: 2rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Gallery &#10084;</h1>
+  <div class="gallery">
+    <img src="/images/11.jpg" alt="Nature">
+    <img src="/images/2.jpg" alt="City">
+    <img src="/images/3.jpg" alt="Space">
+    <img src="/images/4.jpg" alt="Technology">
+    <img src="/images/5.jpg" alt="Nature">
+    <img src="/images/6.jpg" alt="City">
+    <img src="/images/7.jpg" alt="Space">
+    <img src="/images/8.jpg" alt="Technology">
+    <img src="/images/9.jpg" alt="Nature">
+    <img src="/images/10.jpg" alt="City">
+    <img src="/images/1.jpg" alt="Space">
+  </div>
+
+  <footer>
+    &copy; 2025 My Gallery. All rights reserved.
+  </footer>
+
+</body>
+</html>
